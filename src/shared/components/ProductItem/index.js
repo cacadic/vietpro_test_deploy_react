@@ -1,5 +1,4 @@
 import React from "react";
-import CurrencyFormat from "react-currency-format";
 
 const ProductItem = ({ item }) => {
   const { name, price, image, link = "#" } = item;
@@ -14,12 +13,7 @@ const ProductItem = ({ item }) => {
       <p>
         Giá Bán:{" "}
         <span>
-          <CurrencyFormat
-            value={price}
-            displayType={"text"}
-            thousandSeparator={" "}
-            suffix=" đ"
-          />
+          {price} đ
         </span>
       </p>
     </div>
